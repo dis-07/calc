@@ -1,38 +1,87 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.calc {
+  width: 30rem;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 3px 10px 14px 14px rgba(0, 0, 0, 0.41);
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.top {
+  background-color: darkgray;
+}
+
+.action {
+  width: 25%;
+  height: 120px;
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.action-17 {
+  width: 50%;
+}
+
+.nav {
+  margin: 0 5px;
+}
+
+.nav__button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 10px 5px;
+  padding: 0;
+  border: none;
+}
+
+.nav__button--red {
+  background-color: red;
+}
+.nav__button--yellow {
+  background-color: yellow;
+}
+.nav__button--green {
+  background-color: green;
+}
+
+.field, .field input {
+  width: 100%;
+}
+
+.field input {
+  border: 0;
+  padding:  1.5rem;
+  margin: 0;
+  background-color: transparent;
+  font-size: 3.5rem;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  text-align: right;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.field input[type=number]::-webkit-inner-spin-button, 
+.field input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.action--orange {
+  background-color: orange;
+  color: white;
 }
